@@ -1,2 +1,2 @@
 # workout-tracker
-manage and keep traack your workout routine
+manage and keep track your workout routine
