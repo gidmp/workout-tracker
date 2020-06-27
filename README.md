@@ -58,3 +58,5 @@ You are required to submit the following:
 create server.js, api models and mongoose database
 
 for the routes, look at api.js since they already have reqeuests made
+
+npm run seed to add seed file
