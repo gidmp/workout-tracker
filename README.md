@@ -1,62 +1,55 @@
-# workout-tracker
-manage and keep track your workout routine
+# [Workout Tracker](https://ancient-savannah-64833.herokuapp.com/)
 
+## Description
+Workout Tracker is a full-stack web app that enables user to keep track of their exercise progress.
+User can add and then view their workout progress in their dashboard to see their workout status.
 
+This app was made with mongoDB as its theme. My task is to take the pre-built HTML, CSS and JS
+and create the back-end connection to the server and mongoDB database using mongoose.
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+## Table of Contents
+* [Technologies](#technologies)
+* [Usage](#usage)
+* [Demo](#demo)
+* [Directions for Future Development](#Directions-for-future-Development)
+* [Questions](#questions)
 
-## User Story
+## Technologies
+------
+* HTML
+* CSS
+* JavaScript
+* Node.js
+* Express.js
+* [Chart.js](https://www.chartjs.org/)
+* mongoDB
+* mongoose
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+## Usage
+------
+* Navigate to the [deployed Heroku App](https://ancient-savannah-64833.herokuapp.com/).
+* On the Home page, user were given choices to continue their last workout or create a new workout
+* If there are no existing workout, only 'create new workout' is available
+* when navigating, user have to choose between 'cardio' and 'resistance workout'
+* enter the relevant information and choose complete workout.
+* user will be navigated back to the home page with their workout stats displayed.
+* user can navigate to the dashboard from the navbar to see their workout stats spread on a chart.
 
-## Business Context
+## Demo
+------
 
-A consumer will reach their fitness goals quicker when they track their workout progress.
+![](./public/assets/images/workout-tracker3.gif)
 
-## Acceptance Criteria
+## Directions for Future Development
+------
+* update HTML and CSS to be more streamlined and pleasing to look
+* fix the dashboard section where the same exercise shows up as different categories within the chart
+* expand the library for more type of workouts
 
-When the user loads the page, they should be given the option to create a new workout, or continue with their last workout.
+## Questions
+------
 
-The user should be able to:
+<img src="https://avatars2.githubusercontent.com/u/6896220?v=4" alt="a guy" width="75px" height="75px">
 
-  * Add exercises to a previous workout plan.
+If you have any questions, please contact me, [Daniel Luke Tanoeihusada](danielluke08@gmail.com) directly at danielluke08@gmail.com
 
-  * Add new exercises to a new workout plan.
-
-  * View multiple the combined weight of multiple exercises on the `stats` page.
-
-## Commit Early and Often
-
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
-
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
-
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
-
-Follow these guidelines for committing:
-
-* Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-* Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-* Test your application before you commit to ensure functionality at every step in the development process
-
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL to the deployed application
-
-* The URL to the Github repository
-
-
-## personal note
-create server.js, api models and mongoose database
-
-for the routes, look at api.js since they already have reqeuests made
-
-npm run seed to add seed file
