@@ -1,8 +1,10 @@
+
+//api object
 const API = {
+  //a get method to pull the latest information from the databse
   async getLastWorkout() {
     let res;
     try {
-      //a get method
       res = await fetch("/api/workouts");
     } catch (err) {
       console.log(err)
@@ -11,6 +13,8 @@ const API = {
 
     return json[json.length - 1];
   },
+
+  //a put method to add new exercise 
   async addExercise(data) {
     const id = location.search.split("=")[1];
 

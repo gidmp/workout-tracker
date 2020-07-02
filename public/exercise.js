@@ -20,10 +20,12 @@ let shouldNavigateAway = false;
 async function initExercise() {
   let workout;
 
+  //if workout dont't exist, create a new workout
   if (location.search.split("=")[1] === undefined) {
     workout = await API.createWorkout()
     console.log(workout)
   }
+  //if workout exist, add workout id to url?
   if (workout) {
     location.search = "?id=" + workout._id;
   }
@@ -32,6 +34,7 @@ async function initExercise() {
 
 initExercise();
 
+//based on type of workout chosen, add or remove input forms
 function handleWorkoutTypeChange(event) {
   workoutType = event.target.value;
 
